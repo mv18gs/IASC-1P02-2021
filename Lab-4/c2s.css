@@ -1,0 +1,51 @@
+.purpleBorder{
+  border: purple 2px dashed;
+  margin: 12px;
+  padding-top: 120px;
+  padding-bottom: 12px;
+}
+
+/*align*/
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+/*colors*/
+.green{
+  color: green;
+}
+
+.orange{
+  color: orange;
+}
+
+.red{
+  color: red;
+  vertical-align: super;
+}
+
+.purple{
+  color: purple;
+}
+
+.yellow{
+  color: yellow;
+  font-style: italic;
+}
+
+/*size*/
+.big{
+  font-size: 24px
+}
+
+.small{
+  font-size: 9px
+}
+
+.smaller{
+  font-size: 6px
+}

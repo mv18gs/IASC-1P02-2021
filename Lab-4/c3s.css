@@ -1,0 +1,26 @@
+.greenBg{
+  background-color: green;
+}
+
+.blackBorder{
+  margin: 0px 12px 12px 12px;
+  border: black 5px dashed;
+  padding: 18px 12px 18px 12px;
+}
+
+.pad{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.red{
+  color: red;
+}
+
+.greenText{
+  color: darkgreen;
+}
+
+.purple{
+  color: purple;
+}
