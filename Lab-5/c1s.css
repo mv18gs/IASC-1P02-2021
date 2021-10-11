@@ -1,0 +1,37 @@
+body{
+  color:white;
+	background-color:white;
+}
+
+
+#wrapper{
+	width:1604px;
+	margin:0 auto;
+	background-color:white;
+}
+
+#header{
+  width:1604px;
+	height:85px;
+	text-align:center;
+  vertical-align:middle;
+  background-color: red;
+  padding-top: 5px;
+}
+
+#leftbody{
+	width:1604px;
+	height: 690px;
+  padding-top: 10px;
+	background-color:green;
+  float:left;
+}
+
+#bottom{
+  width:1604px;
+	height:90px;
+  padding-top: 10px;
+	clear:both;
+  background-color: blue;
+
+}
