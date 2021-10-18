@@ -21,8 +21,8 @@ body{background-color: #2F3437;}
 }
 
 #content{
-	width: 600px
-	margin:100px auto;
+	width: 600px;
+	margin: 100px auto;
 }
 
 /*Nested selectors*/
