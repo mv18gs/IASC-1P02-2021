@@ -1,0 +1,71 @@
+body{
+	color:white;
+	background-color:black;
+}
+
+
+#wrapper{
+	width:1920px;
+	margin:0 auto;
+	background-color:white;
+}
+
+#header{
+	height:153px;
+  width: 1920px;
+  background-color: #22252B;
+  margin:0 auto;
+
+}
+
+#title{
+  float: left;
+  width: 580px;
+  height: 122px;
+  background-color: darkgrey;
+  padding:25px 70px;
+}
+
+#navigation{
+  float: left;
+  width: 744px;
+  height: 52px;
+  background-color: darkblue;
+  padding:60px 50px;
+  text-align: center;
+}
+
+.navitem{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#store{
+  float: right;
+  width: 256px;
+  height: 62px;
+  background-color: darkred;
+  padding:55px 50px;
+  text-align: center;
+}
+
+#body{
+  width: 1720px;
+  height: 1300px;
+  padding: 50px 100px;
+  background-color: #292C34;
+  clear: both;
+}
+
+img{
+  width: 100%;
+  padding-bottom:24px;
+}
+
+#bottom{
+  width: 1720px;
+	height: 151px;
+  padding: 50px 100px;
+  background-color: #22252B;
+  clear: both;
+}
