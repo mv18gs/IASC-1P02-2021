@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pre js link -->
+      <script type="text/javascript" src="test1b.js"></script>
+    <!-- css link -->
+      <link href="test1.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="home.html">Home</a>
+					<a href="nutrients.html">Nutrients</a>
+					<a href="BMI.html">BMI</a>
+					<a href="assignments.html">Assignments</a>
+					<a href="pathways.html">Pathways</a>
+					<a href="contact.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+						<a href="home.html">Home</a> <!-- class="active" highlights current page -->
+            <a class="home active" href="nutrients.html">Nutrients</a>
+            <a href="BMI.html">BMI</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="pathways.html">Pathways</a>
+            <a href="contact.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+
+					<h2>Carbohydrates</h2>
+					<img class="fig" src="carbs.png" alt="Carbohydrates"/>
+					<p class="caption"><span class="captitle">Carbohydrates. </span> One of the essential nutrients and the primary fuel source of the body. These include grains, certain vegetables (i.e. potatoes), and fruits.</p>
+					<p>Carbohydrates are one of the main classes of nutrients that are important to the body. These biological molecules are generally composed of carbon (C), and water molecules (H2O), thus giving its name "carbo-" "-hydrate". This class of nutrients includes simple to complex sugar molecules namely monosaccharides, disaccharides, and polysaccharides. These nutrients are essential since they are the primary fuel source of the body especially of the brain.</p>
+					<p>There are three main types of carbohydrates: sugars, starches and fibres. Sugars are the simplest carbohydrates as they are in the most basic form. This form of carbohydrates is digested quickly and are naturally found in vegetables, fruits, and milk. Starches are a type of complex carbohydrates which are composed of multiple links of simple sugars. This also means that they take longer to be broken down into simple sugars and digested by the body. Common Sources of starch include vegetables like pasta, rice, and potatoes. The last type of carbohydrates are fibres which are also complex in nature. Although they cannot be digested by the body, it is still important in adding bulk to our stools to help food pass quickly through our digestive system.</p>
+
+					<h2>Lipids</h2>
+					<img class="fig" src="fats.png" alt="Lipids"/>
+					<p class="caption"><span class="captitle">Lipids. </span> They are mostly important for energy storage and are composed of various fatty acid chain lengths that differ in shape and structure.</p>
+					<p>Foods such as seeds, nuts, and legumes are one of the major sources of fats and oils also known as lipids. Lipids are also an important source of energy and other essential nutrients. These are molecules that contain hydrocarbons - chains of hydrogens and carbons. They compose the building blocks of the structure and function of living cells. There are multiple types of lipids which can be classified based on their fatty acid chain length, level of saturation, and shape. Fatty acid is the basic unit of lipids which can vary in terms of chain length. Their level of saturation can be determided based on the amount of H contained in the fatty acid structure. In general, a saturated fatty acid is a type of fatty acid that does not have any double bonds. Saturated fatty acids can be packed tightly with each other, thus making them solid at room temperature. Examples of saturated fatty acids include animal fats, butter, and lard. Additionally, the presence of a double bond represents unsaturation, which alters their shape and stucture. This is the main reason why plant-based oils are generally liquid at room temperature. Lastly, a trans fat or trans-fatty acid is a special type of fatty acid that is generated from hydrogenation in which hydrogen atoms are added to a polyunsaturated fatty acid. This process converts plant-based oils into a more solid form like margarine.</p>
+					<p>There are 3 subclasses of lipids found in food. These are triglycerides, phospholipids and sterols. Triglycerides composes 95% of all fats consumed in our diet, and are composed of three fatty acids molecules and a glycerol backbone. Phospholipids is the second subclass of lipids found in food and only compose a very small portion of our diet. They are also the major component of cellular membranes. Their structure is similar to triglycerides except they only have 2 fatty acid molecules and a phosphate head group. The last subclass of lipids is sterols which are lipids that contain multiple rings of carbon atoms. They are mostly made by our bodies, which makes them an unessential component of our diet. They are important in emulsifying fat and as second messenger molecules of our body. The most common example of a sterol is a cholesterol.</p>
+
+					<h2>Protein</h2>
+					<img class="fig" src="protein.png" alt="Protein"/>
+					<p class="caption"><span class="captitle">Proteins. </span> They are composed of amino acids that are further modified into their final structure as proteins.</p>
+					<p>Proteins are another important component of a healthy diet. They are the critical component of all tissues and are made up of chemical 'building blocks' called amino acids. Amino acids are nitrogen- and carboxylic acid-containing molecules that can either be acidic, basic, polar, or nonpolar based on their side chains. In general, there are 20 essential amino acids and 9 of those has to come from our diet. Long chains of amino acids acan be made to form peptides, and multiple chains of peptides form polypeptides. Futher modifications to the shape and structure of the polypeptide based on various chemical interactions make the final structure of proteins. </p>
+					<p>Proteins can be classified as either complete or incomplete. Complete proteins are those that contail sufficient amounts of essential amino acids. These are often found in eggs, fish, and milk. Incomplete proteins contain insufficient amounts of essential amino acids for growth and health. These are often plant-based proteins that are found in soybeans, nuts, and legumes.</p>
+					<br/>
+
+					<h2>Test Yourself!</h2>
+					<!-- Simple JavaScript Quiz by https://simplestepscode.com/javascript-quiz-tutorial/ -->
+            <div class="specialWrapper">
+              <div id="quiz"></div>
+              <button id="submit">Get Results</button>
+              <div id="results"></div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="test1.js"></script>
+
+	</body>
+
+</html>

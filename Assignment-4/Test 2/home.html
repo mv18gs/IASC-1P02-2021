@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pre js link -->
+      <script type="text/javascript" src="test1b.js"></script>
+    <!-- css link -->
+      <link href="test1.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="home.html">Home</a>
+					<a href="nutrients.html">Nutrients</a>
+					<a href="BMI.html">BMI</a>
+					<a href="assignments.html">Assignments</a>
+					<a href="pathways.html">Pathways</a>
+					<a href="contact.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+						<a class="home active" href="home.html">Home</a> <!-- class="active" highlights current page -->
+            <a href="nutrients.html">Nutrients</a>
+            <a href="BMI.html">BMI</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="pathways.html">Pathways</a>
+            <a href="contact.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+					<h2>Welcome!</h2>
+        	<p>Welcome to our class, introduction to nutrition! Please use the navigation bar above to get started.</p>
+
+					<h3>What is nutrition?</h3>
+					<p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life. It includes ingestion, absorption, assimilation, biosynthesis, catabolism and excretion. Human nutrition deals with the provision of essential nutrients in food that are necessary to support human life and good health. Poor nutrition is a chronic problem often linked to poverty, food security, or a poor understanding of nutritional requirements. Malnutrition and its consequences are large contributors to deaths, physical deformities, and disabilities worldwide. Good nutrition is necessary for children to grow physically and mentally, and for normal human biological development.</p>
+
+					<h3>What will we be doing?</h3>
+					<p>In this class, we will take an overview of each of the major nutrients which are significant to human nutrition. We will look at what they are, how they are metabolized, and ultimately how this impacts our health.</p>
+
+					<h3>What is this website?</h3>
+					<p>This class website will be the source of any posted lecture notes, assignments, and notifications for the class. Please look around make sure you are comfortable with it! Use the navigation bar at the top to get started.</p>
+					<br/>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+					<p>https://en.wikipedia.org/wiki/Human_nutrition</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="test1.js"></script>
+
+	</body>
+
+</html>

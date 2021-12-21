@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pre js link -->
+      <script type="text/javascript" src="test1b.js"></script>
+    <!-- css link -->
+      <link href="test1.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="home.html">Home</a>
+					<a href="nutrients.html">Nutrients</a>
+					<a href="BMI.html">BMI</a>
+					<a href="assignments.html">Assignments</a>
+					<a href="pathways.html">Pathways</a>
+					<a href="contact.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+            <a href="home.html">Home</a> <!-- class="active" highlights current page -->
+            <a href="nutrients.html">Nutrients</a>
+            <a href="BMI.html">BMI</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="pathways.html">Pathways</a>
+            <a class="home active" href="contact.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+					<h2>Instructor - Dr. Smartypants</h2>
+					<img class="fig" src="smartypants.jpg" alt="Dr. Smartypants"/>
+					<p class="caption"><span class="captitle">E-mail: </span> iansmartypants@realuniversity.com</p>
+    			<p>Hello! I'm Dr. Smartypants. Yes, that is my real name. I have always loved food and health growing up, but wanted to know more - so I decided to become a nutrition researcher! My research surrounds how we can eat healthier without sacrificing the foods that we love.</p>
+
+					<h2>Lab 1 & 2 TA - Bobby Bobberson</h2>
+					<img class="fig" src="bobby.jpg" alt="Bobby"/>
+					<p class="caption"><span class="captitle">E-mail: </span> bobbertbobberson@realuniversity.com</p>
+					<p>Hey, I'm Bobby - short for Bobbert - but you can just call me Bobby. I love working out and eating fresh, but I also like to study how I can do that better (for maximum gains). I also really like cats. Dogs too. Animals are pretty cool in general. Feel free to reach out for questions!</p>
+
+					<h2>Lab 3 & 4 TA - Jo McJoJo</h2>
+					<img class="fig" src="jo.jpg" alt="Jo"/>
+					<p class="caption"><span class="captitle">E-mail: </span> jomcjojo@realuniversity.com</p>
+					<p>Heya, I'm Jo! Cooking and the culinary world is my passion, ever since I grew up. I wanted to elevate my cooking and push the boundaries of food - so here I am! I'm currently researching with Dr. Smartypants about how we can amplify flavours without the use of artificial sweeteners. Excited to see you in lab!</p>
+					<br/>
+
+				</div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="test1.js"></script>
+
+	</body>
+
+</html>

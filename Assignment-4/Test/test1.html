@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pre js link -->
+      <script type="text/javascript" src="test1b.js"></script>
+    <!-- css link -->
+      <link href="test1.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">Nutrients</a>
+          <a href="#">BMI</a>
+          <a href="#">Assignments</a>
+          <a href="#">Pathways</a>
+          <a href="#">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+            <a class="active home" href="javascript:void(0)">Home</a> <!-- class="active" highlights current page -->
+            <a href="javascript:void(0)">Nutrients</a>
+            <a href="javascript:void(0)">BMI</a>
+            <a href="javascript:void(0)">Assignments</a>
+            <a href="javascript:void(0)">Pathways</a>
+            <a href="javascript:void(0)">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+
+          <!-- Simple JavaScript Quiz by https://simplestepscode.com/javascript-quiz-tutorial/ -->
+            <h2>Sample Quiz</h2>
+            <div class="specialWrapper">
+              <div id="quiz"></div>
+              <button id="submit">Get Results</button>
+              <div id="results"></div>
+            </div>
+
+          <!-- BMI Calculator -->
+            <h2>BMI Calculator</h2>
+            <div class="specialWrapper">
+              <p class="bmiLabel">Weight (kg)</p>
+              <p><input type="number" name="inputKg" id="inputKg"></p>
+
+              <p class="bmiLabel">Height (cm)</p>
+              <p><input type="number" name="inputCm" id="inputCm"></p>
+              <br/>
+
+              <button type="button" id="metricBMI" onclick="metricBMI()"> Calculate BMI! </button>
+              <p>BMI: <span id="outputBMI"></span></p>
+
+            </div>
+
+          <!-- Countdown Timer by https://www.w3schools.com/howto/howto_js_countdown.asp -->
+            <h2>Countdown Timer</h2>
+            <div class="specialWrapper">
+              <h3>Assignment 1 is due in:</h3>
+              <p id="cd"></p>
+            </div>
+
+          <!-- Image Zoom by https://www.w3schools.com/howto/howto_js_image_zoom.asp -->
+            <h2>Image Zoom</h2>
+            <div class="specialWrapper">
+              <p>Hover over to zoom in!</p>
+              <div class="img-zoom-container">
+                <img id="myimage" src="pathways.png" width="100%" alt="Pathways">
+                <br/><br/>
+                <div id="myresult" class="img-zoom-result"></div>
+                <br/>
+              </div>
+            </div>
+
+
+
+
+          <h2>Heading 2</h2>
+          <p>The navbar will stick to the top when you reach its scroll position.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+          <h2>Heading 2</h2>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+          <h3>Heading 3</h3>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+          <h3>Heading 3</h3>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+          <h3>Heading 3</h3>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+          <h2>Heading 2</h2>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="test1.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,348 @@
+/* Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 60px;
+      }
+
+  /* Style the navbar */
+    .topnav {
+      overflow: hidden;
+      z-index: 1;
+
+      /* Image with Transparent Text by https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+        background-color: rgb(55, 60, 63); /* Fallback color */
+        background-color: rgba(55, 60, 63, 0.95); /* Black background with 0.5 opacity */
+
+      /* box-shadow from w3schools.com/cssref/css3_pr_box-shadow.asp */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+      }
+
+  /* Navbar links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #EBEBEB;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      z-index: 1;
+    }
+
+    .topnav a.active {
+      background-color: #2F443A;
+      color: #71B384;
+      border-bottom: 2px solid #71B384;
+      z-index: 1;
+    }
+
+    .topnav a:hover {
+      background-color: #4B5053;
+      color: #EBEBEB;
+      z-index: 1;
+
+      /* box-shadow from w3schools.com/cssref/css3_pr_box-shadow.asp */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a.active:hover {
+      background-color: #3a8;
+      color: #EBEBEB;
+      z-index: 1;
+
+    }
+
+
+
+/* Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+  /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+      display: none;
+      padding: 17.5px 16px;
+      z-index: 1;
+    }
+
+    .topnav .icon:hover { /*make icon hover fill navbar height*/
+      background-color: #ddd;
+      color: black;
+      z-index: 1;
+    }
+
+  /* When the screen is less than 600 pixels wide... */
+    @media screen and (max-width: 600px) {
+      /*hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        .topnav a:not(.home) {
+          display: none;
+          z-index: 1;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+          z-index: 1;
+        }
+    }
+
+
+/* Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp */
+  /* The side navigation menu */
+    .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 2; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      padding-top: 60px; /* Place content 60px from the top */
+      text-align:center;
+      }
+
+  /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+
+    }
+
+  /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover{
+      color: #f1f1f1;
+    }
+
+  /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+
+/* Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+
+    /* Image with Transparent Text by https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+      background-color: rgb(47, 68, 58); /* Fallback color */
+      background-color: rgba(47, 68, 58, 0.5); /* Black background with 0.5 opacity */
+
+    color: #71B384; /* Text color */
+
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #myBtn:hover {
+    background-color: #3a8;
+    color: #fff;
+  }
+
+  h2{
+    background-color: #2F443A;
+    padding: 16px;
+    margin-top: 2.20em;
+    margin-bottom: -0.20em;
+    color: #71B384;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+/* Simple JavaScript Quiz by https://simplestepscode.com/javascript-quiz-tutorial/ */
+  .question{
+  	font-weight: bold;
+    margin-bottom: 0.5em;
+    }
+
+  .answers {
+    margin-bottom: 2em;
+    }
+
+  #submit{
+  	font-size: 16px;
+    font-weight: bold;
+  	background-color: #2F443A;
+  	color: #71B384;
+  	border: 0px;
+  	border-radius: 3px;
+  	padding: 16px;
+  	cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+  #submit:hover{
+  	background-color: #3a8;
+    color: #fff;
+  }
+
+
+/* BMI Calculator */
+  .bmiLabel{
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: -0.5em;
+  }
+
+  #metricBMI{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2F443A;
+    color: #71B384;
+    border: 0px;
+    border-radius: 3px;
+    padding: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+  #metricBMI:hover{
+    background-color: #3a8;
+    color: #fff;
+  }
+
+
+/* Countdown Timer by https://www.w3schools.com/howto/howto_js_countdown.asp */
+  #cd{
+    font-size: 200%;
+    margin-bottom: 1.5em;
+  }
+
+
+/* Image Zoom by https://www.w3schools.com/howto/howto_js_image_zoom.asp */
+  * {box-sizing: border-box;}
+
+  .img-zoom-container {
+    position: relative;
+    }
+
+  .img-zoom-lens {
+    position: absolute;
+    border: 3px solid #71B384;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+    }
+
+  .img-zoom-result {
+    /*set the size of the result div:*/
+    width: 100%;
+    height: 400px;
+    }
+
+
+/* Other */
+  /*Main*/
+    body {
+      background-color: #292B2D;
+      font-size: 16px;
+      /*margin: 0;
+      font-family: Arial, Helvetica, sans-serif;*/
+      color: #EBEBEB;
+      font-family: "Segoe UI", Helvetica, sans-serif;
+      }
+
+    .wrapper{
+      max-width: 600px;
+      margin: auto;
+      }
+
+    .specialWrapper{
+      padding: 2em;
+      margin: 2em 0em;
+      border: 3px solid #71B384;
+      text-align: center;
+      }
+
+    .header {
+      padding: 48px;
+      text-align: center;
+
+      /* Hero Image from https://www.w3schools.com/howto/howto_css_hero_image.asp */
+        background-image:
+          linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+            ),
+          url("bg2.jpg");
+
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+      }
+
+    .footer {
+      padding: 24px;
+      text-align: left;
+
+      /* Hero Image from https://www.w3schools.com/howto/howto_css_hero_image.asp */
+        background-image:
+          linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+            ),
+          url("bg2.jpg");
+
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+      }
+
+    .content {
+      max-width: 600px;
+      margin: auto;
+      }
+
+  /*More Text*/
+    h1{
+      font-size: 350%;
+      padding: 0.25em;
+      border: 3px solid #71B384;
+      text-align: center;
+      }
+
+    h2{
+      background-color: #2F443A;
+      padding: 16px;
+      margin-top: 2.20em;
+      margin-bottom: -0.20em;
+      color: #71B384;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+    h3{
+      margin-top: 1.5em;
+      margin-bottom: -0.5em;
+      color: #71B384;
+      }

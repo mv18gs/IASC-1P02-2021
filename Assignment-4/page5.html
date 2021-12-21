@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pre js link -->
+      <script type="text/javascript" src="page5.js"></script>
+    <!-- css link -->
+      <link href="page5.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="page1.html">Home</a>
+					<a href="page2.html">Nutrients</a>
+					<a href="page3.html">BMI</a>
+					<a href="page4.html">Assignments</a>
+					<a href="page5.html">Pathways</a>
+					<a href="page6.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+						<a href="page1.html">Home</a> <!-- class="active" highlights current page -->
+            <a href="page2.html">Nutrients</a>
+            <a href="page3.html">BMI</a>
+            <a href="page4.html">Assignments</a>
+            <a class="home active" href="page5.html">Pathways</a>
+            <a href="page6.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+
+					<h2>What are metabolic pathways?</h2>
+					<p>In short, metabolic pathways - in regards to food - relate to how food is digested in the body. In class, we will be going over all of the pathways for each individual nutrient - whether its a carb, lipid, protein, you name it!</p>
+
+					<h3>The Metabolic Pathway Map</h3>
+					<p>Now its imporant to know that, while we are covering them one at a time, these pathways all help and feed into each other. Below is a map to demonstrate how these pathways are all interconnected. Don't worry, this is more than you need to know for the class.</p>
+
+          <!-- Image Zoom by https://www.w3schools.com/howto/howto_js_image_zoom.asp -->
+          <div class="specialWrapper">
+            <p>Hover over to zoom in!</p>
+            <div class="img-zoom-container">
+              <img id="myimage" src="pathways.png" width="100%" alt="Pathways">
+              <br/><br/>
+              <div id="myresult" class="img-zoom-result"></div>
+              <br/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="page1.js"></script>
+				<script type="text/javascript">
+				//Image Zoom by https://www.w3schools.com/howto/howto_js_image_zoom.asp
+					//Note: requires pre js script
+					imageZoom("myimage", "myresult");
+				</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css link -->
+      <link href="page4.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="page1.html">Home</a>
+					<a href="page2.html">Nutrients</a>
+					<a href="page3.html">BMI</a>
+					<a href="page4.html">Assignments</a>
+					<a href="page5.html">Pathways</a>
+					<a href="page6.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+						<a href="page1.html">Home</a> <!-- class="active" highlights current page -->
+            <a href="page2.html">Nutrients</a>
+            <a href="page3.html">BMI</a>
+            <a class="home active" href="page4.html">Assignments</a>
+            <a href="page5.html">Pathways</a>
+            <a href="page6.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+
+					<!-- Countdown Timer by https://www.w3schools.com/howto/howto_js_countdown.asp -->
+            <div class="specialWrapper">
+              <h3>Assignment 1 is due in:</h3>
+              <p id="cd"></p>
+            </div>
+
+						<h2>Assignment 1</h2>
+						<h3>Essential Nutrients from Your Diet</h3>
+						<p>A healthy and balanced diet is important for our overall health and well-being. In this assignment you are asked to track the 3 essential nutrients disscused in this course in the duration of 2 weeks. </p>
+
+						<h3>Format</h3>
+						<p>12pt, Times New Roman font. Include your start and end date. Headings: Day 1, Day 2 ... Day 14. Note: Each heading requires a separate table. This assignment is to be submitted via email by Jan 21, 2022 at 11:59pm. Late assignments have a 10% deduction penalty per day. Submit as either word or pdf document.
+</p>
+							<br/><br/>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="page4.js"></script>
+
+	</body>
+
+</html>

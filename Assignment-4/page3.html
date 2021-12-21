@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>Basic Page with CSS + Javascript</title>
+
+    <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css link -->
+      <link href="page3.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+      <div class="header">
+        <div class="wrapper">
+          <h1>NUTRITION</h1>
+        </div>
+      </div>
+
+      <!-- Side Navigation by https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="page1.html">Home</a>
+					<a href="page2.html">Nutrients</a>
+					<a href="page3.html">BMI</a>
+					<a href="page4.html">Assignments</a>
+					<a href="page5.html">Pathways</a>
+					<a href="page6.html">Contact</a>
+        </div>
+
+      <!-- Sticky Navbar by https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+        <div class="topnav" id="navbar"> <!-- replace href="" with url to other html pages-->
+          <div class="wrapper">
+
+						<a href="page1.html">Home</a> <!-- class="active" highlights current page -->
+						<a href="page2.html">Nutrients</a>
+						<a class="home active" href="page3.html">BMI</a>
+						<a href="page4.html">Assignments</a>
+						<a href="page5.html">Pathways</a>
+						<a href="page6.html">Contact</a>
+
+            <!-- Responsive Top Navigation by https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+              <a href="javascript:void(0);" class="icon" onclick="openNav()"> <!-- class="icon" used to open/close nav on small screens-->
+                <i class="fa fa-bars"></i>
+              </a>
+
+          </div>
+
+
+        </div>
+
+      <div class="content">
+        <div class="wrapper">
+						<h2>What is BMI?</h2>
+						<p>Body Mass Index (BMI) is a measure of body fat based on height and weight. This can be calculated by dividing weight (kg) by the square of height (m). A BMI of less than 18.5 indicates underweight, 18.5 to 24.9 indicates normal weight, 25 to 29.9 indicates overweight, and more than 30.0 indicates obesity. This measurement is important to generally predict health risks or problems. However, it does not indicate the amount or pattern of fat and lean mass, nor the differences in activity level. For example, a high BMI does can either mean that a person is obese or high in muscle mass. This is also one of the limitations from this measurement such that it is not appropriate for those who are high in muscle mass, pregnant or nursing, under 18 years old, and more.</p>
+
+
+          <!-- BMI Calculator -->
+            <h2>BMI Calculator</h2>
+            <div class="specialWrapper">
+              <p class="bmiLabel">Weight (kg)</p>
+              <p><input type="number" name="inputKg" id="inputKg"></p>
+
+              <p class="bmiLabel">Height (cm)</p>
+              <p><input type="number" name="inputCm" id="inputCm"></p>
+              <br/>
+
+              <button type="button" id="metricBMI" onclick="metricBMI()"> Calculate BMI! </button>
+              <p>BMI: <span id="outputBMI"></span></p>
+
+            </div>
+
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper">
+          <h3>References</h3>
+          <p>University of Hawai‘i at Mānoa Food Science and Human Nutrition Program. Human Nutrition (2018, Creative Commons Attribution, http://pressbooks.oer.hawaii.edu/humannutrition).</p>
+        </div>
+      </div>
+
+      <!-- Scroll Back To Top Button by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <!-- post js link-->
+        <script type="text/javascript" src="page3.js"></script>
+
+	</body>
+
+</html>
